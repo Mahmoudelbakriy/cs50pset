@@ -1,0 +1,91 @@
+body
+{
+    background-image: url("/expenses/image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+}
+
+
+.navbar
+{
+    padding: 10px;
+}
+.navbar-brand
+{
+    display: block;
+    font-size: 20px;
+}
+
+.logo-name
+{
+    font-family: 'Agustina', sans-serif;
+    font-weight: 700;
+}
+
+.grey-color
+{
+    color: #868e96;
+}
+
+.collapse li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    display: block;
+    color: #000;
+    margin-right: 30px;
+}
+
+.input-group-text{
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.cont
+{
+    background-color: #D4FAFC;
+    display: block;
+    border: 3px solid lightblue;
+    border-radius: 10px;
+    padding-right: 10px;
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    transition: all 0.30s ease-in-out;
+}
+
+h2
+{
+    font-family: 'Monofett', cursive;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+td
+{
+    font-size: 1rem;
+    font-family: 'Changa One', cursive;
+}
+
+.cell
+{
+    padding: 0px 10px;
+}
+
+/* Media Query */
+@media (min-width: 576px) {
+    .cell
+    {
+        padding: 0px 100px;
+    }
+
+    .cont
+    {
+        padding-right: 40px;
+    }
+
+}

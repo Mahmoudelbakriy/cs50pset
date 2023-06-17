@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/agustina" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monofett&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="http://www.freepik.com" rel="background image" alt="Designed by studiogstock / Freepik">
+
+    <title>Expense Tracker</title>
+    <link data-n-head="ssr" rel="icon" data-hid="favicon-32" type="image/png" size="32" href="https://img.icons8.com/emoji/256w/money-bag-emoji.png">
+
+  </head>
+  <body>
+    <!--Creating the navbar-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="/index.html">
+              <span class="grey-color">&lt;</span>
+              <span class="logo-name">Mahmoud Elbakry</span>
+              <span class="grey-color">/></span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/expenses/expenses.html">Expense Tracker</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/to-do/to-do.html">To-Do</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/cards/cards.html">Cards</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Creating the Expense Tracker page content-->
+
+        <!-- Creating the Expenses Entry content-->
+        <div class="container">
+
+            <form class="row" onsubmit="return false;" novalidate>
+            <div class="col-sm mb-3 my-sm-5">
+              <select required="" class="form-select form-control"aria-label="Default select example">
+                <option selected disabled value="">Category</option>
+                <option value="🏘️ Housing">🏘️ Housing</option>
+                <option value="🚌 Transportation">🚌 Transportation</option>
+                <option value="🏥 Healthcare">🏥 Healthcare</option>
+                <option value="📺 Entertainment">📺 Entertainment</option>
+                <option value="🛀 Personal Care">🛀 Personal Care</option>
+              </select>
+            </div>
+
+            <div class="input-group col-sm mb-3 my-sm-5">
+              <span class="input-group-text">Name</span>
+              <input type="text" required="" class="form-control" placeholder="Where was the expense made?" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group col-sm mb-3 my-sm-5">
+              <span class="input-group-text">Amount</span>
+              <input type="number" min="1" required="" class="form-control" placeholder="How much was the expense?" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="input-group col-sm mb-3 my-sm-5">
+              <span class="input-group-text">Date</span>
+              <input type="date" required="" class="form-control" placeholder="When was the expense made?" aria-describedby="basic-addon1">
+            </div>
+
+            </form>
+
+
+          <div class="d-grid col-sm-4 mx-auto">
+            <button type="submit" id="add" class="btn btn-success">Add Expense</button>
+          </div>
+
+
+
+          <div id="expenses"></div>
+
+        </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>

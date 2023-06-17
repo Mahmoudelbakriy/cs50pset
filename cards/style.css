@@ -1,0 +1,70 @@
+body
+{
+    background-color: #e6e8e6;
+}
+.navbar
+{
+    padding: 10px;
+}
+.navbar-brand
+{
+    display: block;
+    font-size: 20px;
+}
+
+.logo-name
+{
+    font-family: 'Agustina', sans-serif;
+    font-weight: 700;
+}
+
+.grey-color
+{
+    color: #868e96;
+
+}
+
+.collapse li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+    display: block;
+    color: #000;
+    margin-right: 30px;
+}
+
+.row{
+    margin: 6px;
+
+}
+h5
+{
+    font-family: 'Anton', sans-serif;
+}
+p
+{
+    font-family: 'Lobster Two', cursive;
+}
+.card{
+    overflow: hidden;
+    position: relative;
+}
+
+img{
+    transition: all 0.3s ease-out;
+}
+
+.card-text{
+    display: none;
+    transition: display 0.7s ease-in-out;
+}
+
+.card:hover {
+    cursor: pointer;
+    .card-text {
+      display: block;
+    }
+  }
+
+.card:hover img {
+    transform: scale(1.3) translateY(-20px);
+  }
