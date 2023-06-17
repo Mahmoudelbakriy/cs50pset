@@ -50,12 +50,12 @@ p
 }
 
 img{
-    transition: all 0.3s ease-out;
+    transition: all 1.5s ease-in-out;
 }
 
 .card-text{
     display: none;
-    transition: display 0.7s ease-in-out;
+    transition: display 1.5s ease-in-out;
 }
 
 .card:hover {
